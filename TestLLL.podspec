@@ -6,13 +6,13 @@ Pod::Spec.new do |s|
   我是一个 pod 测试的 demo
                    DESC
   s.homepage     = "https://github.com/lll3/TestLLL.git"
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = "MIT"
   s.author             = { "fujia" => "aaa@qq.com" }
   s.platform     = :ios, '9.0'
   s.source       = { :git => "https://github.com/lll3/TestLLL/TestLLL.git", :tag => s.version.to_s }
   s.source_files  = "TestLLL/**/*.{h,m}"
  #s.resource  = "hcdCachePlayer/hcdCachePlayer.bundle"
-  s.frameworks = "UIKit", "AVFoundation", , "Foundation"
+  s.frameworks = "UIKit", "AVFoundation",  "Foundation"
   s.requires_arc = true
 
 end
