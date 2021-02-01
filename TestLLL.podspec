@@ -1,10 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "TestLLL"
   s.version      = "1.0.0"
-  s.summary      = "pod测试"
-  s.description  = <<-DESC
-  我是一个 pod 测试的 demo
-                   DESC
+  s.summary      = "poo demo demo"
+  s.description  = "a test demo demo demo"
+                   
   s.homepage     = "https://github.com/lll3/TestLLL.git"
   s.license      = "MIT"
   s.author             = { "fujia" => "aaa@qq.com" }
