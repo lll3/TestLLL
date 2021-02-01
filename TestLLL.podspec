@@ -1,5 +1,23 @@
+Pod::Spec.new do |s|
+  s.name         = "TestLLL"
+  s.version      = "1.0.0"
+  s.summary      = "pod测试"
+  s.description  = <<-DESC
+  我是一个 pod 测试的 demo
+                   DESC
+  s.homepage     = "https://github.com/lll3/TestLLL.git"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author             = { "fujia" => "aaa@qq.com" }
+  s.platform     = :ios, '9.0'
+  s.source       = { :git => "https://github.com/lll3/TestLLL/TestLLL.git", :tag => s.version.to_s }
+  s.source_files  = "TestLLL/**/*.{h,m}"
+ #s.resource  = "hcdCachePlayer/hcdCachePlayer.bundle"
+  s.frameworks = "UIKit", "AVFoundation", , "Foundation"
+  s.requires_arc = true
+
+end
 #
-#  Be sure to run `pod spec lint TestLLL.podspec.podspec' to ensure this is a
+#  Be sure to run `pod spec lint TestLLL.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -16,17 +34,18 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TestLLL"
-  spec.version      = "1.0.0"
-  spec.summary      = "A demo TestLLL.podspec."
+  spec.version      = "0.0.1"
+  spec.summary      = "A short description of TestLLL."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "a shrot demo demo demo demo demo demo demo"
+  spec.description  = <<-DESC
+                   DESC
 
-  spec.homepage     = "https://github.com/lll3/TestLLL.git"
+  spec.homepage     = "http://EXAMPLE/TestLLL"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -37,7 +56,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
+  spec.license      = "MIT (example)"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -78,7 +97,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/lll3/TestLLL/TestLLL.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "http://EXAMPLE/TestLLL.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +108,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "TestLLL", "TestLLL/TestLLL/lib/**/*.{h,m}"
-  #spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -116,7 +135,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "UIKit","Foundation"
+  # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
