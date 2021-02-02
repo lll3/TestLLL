@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "fujia" => "aaa@qq.com" }
   s.platform     = :ios, '9.0'
-  s.source       = { :git => "https://github.com/lll3/TestLLL/TestLLL.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/lll3/TestLLL.git", :tag => s.version.to_s }
   s.source_files  = "TestLLL/**/*.{h,m}"
  #s.resource  = "hcdCachePlayer/hcdCachePlayer.bundle"
   s.frameworks = "UIKit", "AVFoundation",  "Foundation"
